@@ -4,10 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { IOMDBResponse } from './omdbresponse';   
 import { OmdbApiService } from './services/omdb-a.service';
 import { SearchtitleComponent } from './components/searchtitle/searchtitle.component';
+import { RouterLink } from '@angular/router';
+import { RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,RouterOutlet],
+  imports: [CommonModule,RouterOutlet,RouterLink,RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
