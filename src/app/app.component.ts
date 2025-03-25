@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { IOMDBResponse } from './omdbresponse';   
 import { OmdbApiService } from './services/omdb-a.service';
+import { SearchtitleComponent } from './components/searchtitle/searchtitle.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
